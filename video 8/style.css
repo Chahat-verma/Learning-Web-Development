@@ -1,0 +1,14 @@
+p {
+    background-color: aqua;
+}
+a {
+    background-color: rgb(38, 27, 124);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+div {
+    background-color: rgb(101, 39, 39);
+}
+span {
+    background-color: rgb(39, 101, 39);
+}
