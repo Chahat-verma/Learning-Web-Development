@@ -9,41 +9,69 @@
 </head>
 
 <body>
+    <!-- Image -->
     <img height="250" src="wallpaper.jpg" alt="wallpaper">
-<br>
+    <br>
+    <!-- Tables -->
     <table>
         <caption>Student Data</caption>
         <thead>
-        <tr>
-            <th>name</th>
-            <th>age</th>
-            <th>profile</th>
-        </tr>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Profile</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Roni</td>
-            <td>27</td>
-            <td>Software Devloper</td>
-        </tr>
-        <tr>
-            <td>Ramu</td>
-            <td rowspan="2">25</td>
-            <td>Java Devloper</td>
-        </tr>
-        <tr>
-            <td>Chandar</td>
-            <td colspan="2">22</td><!--colspan declare the number of cells occupied by the data-->
-            <td>Application Devloper</td>
-        </tr>
+            <tr>
+                <td>Roni</td>
+                <td>27</td>
+                <td>Software Devloper</td>
+            </tr>
+            <tr>
+                <td>Ramu</td>
+                <td rowspan="2">25</td><!--rowspan declare the number of cells occupied by the data vertically-->
+                <td>Java Devloper</td>
+            </tr>
+            <tr>
+                <td>Chandar</td>
+                <td>22</td>
+                <td colspan="2">Application Devloper</td><!--colspan declare the number of cells occupied by the data horizontally-->
+            </tr>
         </tbody>
         <tfoot>
-        <tr>
-            <td>Anju</td>
-            <td>21</td>
-            <td>Foot</td>
-        </tr>
+            <tr>
+                <td>Anju</td>
+                <td>21</td>
+                <td>Foot</td>
+            </tr>
         </tfoot>
     </table>
+    <br>
+    <h1>Types of lists</h1>
+    <!-- Unordered list -->
+    <ul type="circle">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+        <li>Watermelon</li>
+    </ul>
+    <!-- Ordered list -->
+    <ol type="A">
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Book</li>
+        <li>Bag</li>
+    </ol>
+    <!-- Defination list -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
 </body>
+
 </html>
