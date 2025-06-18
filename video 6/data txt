@@ -1,0 +1,21 @@
+Lreaning about web core vitals
+
+1. Cumulative Layout Shift
+    -CLS is a measure of the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page.
+    A layout shift occurs any time a visible element changes its position from one rendered frame to the next. (Details on how individual layout shift scores are calculated are covered later in this guide.)
+    A burst of layout shifts, known as a session window, is when one or more individual layout shifts occur in rapid succession with less than 1-second in between each shift and a maximum of 5 seconds for the total window duration.
+
+2.Largest contentful paint
+    -LCP reports the render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page.
+    To provide a good user experience, sites should strive to have Largest Contentful Paint of 2.5 seconds or less. To ensure you're hitting this target for most of your users, a good threshold to measure is the 75th percentile of page loads, segmented across mobile and desktop devices.
+
+3.First Input Delay
+    -FID measures the time from when a user first interacts with a page (that is, when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
+    To provide a good user experience, sites should strive to have a First Input Delay of 100 milliseconds or less. To ensure you're hitting this target for most of your users, a good threshold to measure is the 75th percentile of page loads, segmented across mobile and desktop devices.
+    As developers who write code that responds to events, we often assume our code is going to be run immediately—as soon as the event happens. But as users, we've all frequently experienced the opposite—we've loaded a web page on our phone, tried to interact with it, and then been frustrated when nothing happened.
+
+4.Interaction to Next Paint
+    -Interaction to Next Paint (INP) is an important responsiveness metric that measures how quickly a page responds to user interactions. INP observes the latency of all interactions a user has made with the page, and reports a single value which all (or nearly all) interactions were below. Optimizing INP is an involved process, requiring knowledge of various aspects that drive interactivity.
+
+For more we can visit [web.dev](https://web.dev/)
+
