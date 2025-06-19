@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More About Selector in CSS</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: brown;
+        } */
+        /* class Selector */
+        .red {
+            background-color: brown;
+        }
+
+        /* Id Selector */
+        #maroon {
+            background-color: goldenrod;
+        }
+
+        /* Child selector - only applicable for direct child */
+        div>p {
+            color: aqua;
+            background-color: yellow;
+        }
+        /* Descendant selector */
+        div p{
+            color: blueviolet;
+            background-color: cadetblue;
+        }
+        /* Universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo selector */
+        a:visited{
+            color: rgb(103, 47, 8);
+        }
+        a:link{
+            color: rgb(52, 111, 131);
+        }
+        a:active{
+            color: rgb(0, 0, 0);
+        }
+        a:hover{
+            color: aquamarine;
+        }
+        p:first-child{
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <p>
+            i am first para
+        </p>
+        <p>
+            i am second para
+        </p>
+    </div>
+    <div class="red">
+        I am a div
+        <article>
+            <p>This is a paragraph inside div</p>
+        </article>
+    </div>
+    <div id="maroon">
+        I am aa another div
+    </div>
+    <a href="https://www.youtube.com">Go to Linkedin</a>
+    <a href="https://www.you.com">Go to Linkedin</a>
+</body>
+
+</html>
