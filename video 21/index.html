@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascade</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        .red {
+            color: green;
+        }
+
+        /* !important keywaord has the highest priority */
+        .blue {
+            color: blueviolet !important;
+        }
+
+        .green {
+            color: rgb(184, 18, 21);
+        }
+
+        /* Attribute selector*/
+        /* [data-x=a]{
+            background-color: chartreuse;
+        } */
+        
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41
+        a.jon.jack[href]:hover{
+            background-color: darkred;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- The Cascade Algorithm
+    CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+    Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+
+    # Position and order of appearance: the order in which your CSS rules appear
+    # Specificity: an algorithm that determines which CSS selector has the strongest match
+    # Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+    # Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type -->
+    <div>
+        <h1 style="color: aquamarine;" class="red blue green" data-x="a">Hello everyone</h1>
+    </div>
+    <!-- Specificity Calculation
+    # To calculate specificity, assign a value to each part of the selector:
+    
+    # Universal Selector: 0
+    # Element selectors and pseudo-elements: 1
+    # Class selectors, attribute selectors, and pseudo-classes: 10
+    # ID selectors: 100
+    # Inline styles: 1000 -->
+    <p>for more detail about CSS Specificity visit this link <a href="https://www.codewithharry.com/tutorial/css-specificity">CodeWthiHarry</a></p>
+</body>
+
+</html>
