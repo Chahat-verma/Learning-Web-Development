@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :root {
+            --color: #191970;
+            this is background color of nav bar
+            --sec-color: #0c3e77;
+            this is hover background color of nav bar
+            --b-color: black;
+            this is border color of nav bar
+            --hov-color: rgb(92, 190, 92);
+            this is hover text color of nav bar
+            --t-color: #e3eb02d2;
+            this is text color of nav bar
+            --hov-b-color: #4683B7;
+            this is pointer hover background color of nav bar
+            --body-bg:rgb(60, 57, 218);
+        } */
+        :root {
+            --color: #2626b6;
+            --sec-color: #226dc3;
+            --b-color: rgb(52, 42, 42);
+            --hov-color: rgb(123, 212, 123);
+            --t-color: #9ba019d2;
+            --hov-b-color: #85bff2;
+            --body-bg:lightblue;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--body-bg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div ul {
+            background-color: var(--color);
+            color: var(--t-color);
+            display: flex;
+            list-style: none;
+            border: 2px solid var(--b-color);
+            font-weight: bolder;
+
+        }
+
+        div ul:hover {
+            background-color: var(--sec-color);
+            color: var(--hov-color);
+            font-weight: bolder;
+        }
+
+        div ul :hover {
+            background-color: var(--hov-b-color);
+            color: var(--t-color);
+            cursor: pointer;
+            border-left: 2px solid var(--b-color);
+            border-right: 2px solid var(--b-color);
+            padding: 11px;
+            margin: 0;
+            text-shadow: 4px 4px 3px rgb(207 208 48 / 53%);
+            font-weight: bolder;
+        }
+
+        ul li {
+            padding: 4px;
+            margin: 8px;
+        }
+
+        div p {
+            padding: 6px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rem quidem
+            dicta enim molestiae facere esse alias nemo ex autem, minus aperiam!
+            Consectetur provident ut aut maiores cupiditate ipsa doloribus beatae
+            culpa, tenetur nihil quisquam nemo ratione nesciunt magni, aliquam in
+            dolorem molestias eaque, iste consequuntur pariatur repellendus
+            eligendi. Debitis veritatis excepturi temporibus ipsam!
+        </p>
+    </div>
+</body>
+
+</html>
