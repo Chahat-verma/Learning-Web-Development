@@ -1,0 +1,2 @@
+Design the given layout using HTML and CSS. The layout should be responsive and adapt to different screen sizes. Use positioning property.
+In ths layout, there should be a header, a main section with two columns, a cirular logo in the right bottom corner and a footer. The logo should not move along with the webpage. The footer should span the entire width of the page.
