@@ -1,0 +1,2 @@
+design a multicoloer nav bar of a website
+using local and global variables to its properties
