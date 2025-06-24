@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 Solution</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+
+            padding: 20px 57px;
+        }
+
+        nav {
+            margin: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav div {
+            position: absolute;
+            display: flex;
+        }
+
+        .logo {
+            height: 62px;
+            /* Adjust as needed */
+        }
+
+        .text {
+            position: relative;
+            top: 48px;
+            right: 70px;
+            padding: 2px;
+            height: 12px;
+            /* Adjust as needed */
+        }
+
+        nav ul {
+            position: relative;
+            top: 8px;
+            left: 270px;
+            list-style: none;
+            display: flex;
+            gap: 22px;
+            font-size: 16px;
+        }
+
+        .menu {
+            color: #252525;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 4px;
+        }
+
+        .drop-menu {
+            height: 8px;
+            color: rgb(86, 86, 86);
+        }
+
+
+        .btn {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+            padding: 8px 20px;
+            /* margin-left: 95px; */
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .lang {
+            text-decoration: none;
+            color: #303030;
+            padding: 6px;
+            font-size: 16px;
+            font-weight: 200;
+            position: relative;
+            bottom: 8px;
+        }
+
+        .globe {
+            height: 22px;
+            position: relative;
+            bottom: 2px;
+        }
+
+        .search {
+            height: 20px;
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .language:hover {
+            opacity: 0.8;
+        }
+
+        .search:hover {
+            opacity: 0.8;
+        }
+
+        .menu:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img class="logo" src="Background-2.png" alt="">
+                <img class="text" src="Layer-1-1.png" alt="">
+            </div>
+            <ul>
+                <li><a class="menu" href="/">Products</a>
+                    <img class="drop-menu" src="arrow-down-sign-to-navigate.png" alt="">
+                </li>
+                <li><a class="menu" href="/">Pricing</a>
+                    <img class="drop-menu" src="arrow-down-sign-to-navigate.png" alt="">
+                </li>
+                <li><a class="menu" href="/">Resources</a>
+                    <img class="drop-menu" src="arrow-down-sign-to-navigate.png" alt="">
+                </li>
+                <li><a class="menu" href="/">Our company</a>
+                    <img class="drop-menu" src="arrow-down-sign-to-navigate.png" alt="">
+                </li>
+                <li><a class="btn" href="/">BUY NOW</a></li>
+                <li class="language"><img class="globe" src="globe.svg" alt=""><a class="lang" href="/">English</a></li>
+                <img class="search" src="search.svg" alt="">
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
