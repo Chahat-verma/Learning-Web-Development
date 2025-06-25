@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container {
+            margin: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: #7a4242;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            transition-property: transform, background-color;
+            transition-duration: 5s;
+            transition-timing-function: cubic-bezier(0.82,-0.02, 0.17, 0.94);
+            transition-delay: 1s;
+            /* transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out; */
+        }
+
+        .tra {
+            transform: translateX(150px) translateY(150px) scale(2.5);
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box tra"></div>
+    </div>
+</body>
+
+</html>
