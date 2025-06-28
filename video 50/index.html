@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img {
+            /* filter: blur(10px); */
+            height: 250px;
+        }
+
+        .img1 {
+            filter: brightness(100%) contrast(0.8);
+        }
+
+        .img2 {
+            /* filter: invert(1); */
+            /* filter: opacity(.6); */
+            filter:  drop-shadow(16px 16px 20px rgb(117, 112, 112)) invert(7%);;
+        }
+        .img3 {
+            /* filter: sepia(80%); */
+            filter: grayscale(805);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1"
+            src="https://assets.gqindia.com/photos/653a68cf4233545fe8acb9b4/16:9/w_2560%2Cc_limit/Movies-turned-down-by-Leo-star-Vijay.jpg"
+            alt="">
+        <img class="img2" src="https://www.bollywoodshaadis.com/img/article-2016925110154136941000.jpg" alt="">
+        <img class="img3"
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQT7kmV4bD7Rq6TGml2I3bkl6J36AdbbsFaZEGZdmXbptsYhLHrNCVEzt8WfDRZPP7Hw_9krYvcfjFXOaBtgUqUA"
+            alt="">
+    </div>
+</body>
+
+</html>
