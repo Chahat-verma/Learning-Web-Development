@@ -1,0 +1,12 @@
+create a faulty calculator using Js
+this faulty calculator does following:
+-- It takes two numbers as input from the user
+-- It performs wrong operations as follows:
++ ----> -
+* ----> +
+- ----> /
+/ ----> **
+
+It performs wrong operation 10% of the times
+use this function
+a= Math.random()
