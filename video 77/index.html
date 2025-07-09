@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .card {
+            margin: 8px;
+            display: flex;
+            border: 2px solid rgb(63, 63, 63);
+            border-radius: 6px;
+            width: 860px;
+            align-items: center;
+            color: white;
+        }
+
+        .container :hover {
+            background-color: rgba(33, 32, 32, 0.924);
+        }
+
+        .image {
+            position: relative;
+            margin: 0px 6px;
+        }
+
+        .image img {
+            padding-top: 6px;
+            border-radius: 9px;
+        }
+
+        .text h1 {
+            font-size: 16px;
+        }
+
+        .text h1 a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        ul {
+            display: flex;
+            gap: 25px;
+            font-size: 14px;
+            padding: 2px;
+        }
+
+        ul li:first-child {
+            list-style: none;
+        }
+
+        ul li:first-child a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .capsule {
+            position: absolute;
+            z-index: 5;
+            bottom: 8px;
+            font-size: 12px;
+            right: 5px;
+            background-color: rgb(20, 16, 16);
+            color: white;
+            opacity: 0.65;
+            padding: 2px 7px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <a href="/"><img
+                        src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB6VzxANxt3dHm91HW9lLfDlxvmuA"
+                        alt=""></a>
+                <div class="capsule">31:54</div>
+            </div>
+            <div class="text">
+                <h1><a href="/">Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1</a>
+                </h1>
+                <ul>
+                    <li><a href="/">CodeWithHarry</a></li>
+                    <li>5.2M views</li>
+                    <li>1 year ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
